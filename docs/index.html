@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUMA - Sustainability Management</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="../public/style.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+    <!-- Styling for input field -->
+    <style>
+        input[type=email]:focus {
+          border: 2px solid #F19837;
+          outline: none;
+ 
+        }
+    </style>
 
     <!-- Favicon -->
 
@@ -19,25 +28,24 @@
     <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-</head>
-<body class="bg-black-custom text-white-custom">
+    </head>
+    <body class="bg-black-custom text-white-custom">
 
     
     <div class="bg-custom">
         <div class="wrapper xl:max-w-[1200px] lg:max-w-[900px] mx-auto">
             <!-- Top nav -->
             <div class="pt-4">
-                <div class="nav-menu flex flex-row items-center justify-between">
+                <div class="nav-menu flex flex-row items-center justify-between text-white-custom">
                     <div>
                         <img src="images/suma-logo-square-brown.svg" alt="SUMA Logo" class="w-16 h-16">
                     </div>
-                    <a href="#" class="">Platform</a>
-                    <a href="#" class="">Pricing</a>
-                    <a href="#" class="">Pricing</a>
-                    <a href="#" class="">Documents</a>
-                    <div class="space-x-4">
-                        <a href="#" class="">Login</a>
-                        <a href="#" class="">Create Free Account</a>
+
+                    <div class="flex flex-row gap-4 items-center">
+                        <a href="#" class="border-b-2 border-transparent hover:border-white-custom transition-all duration-300">Pricing</a>
+                        <a href="#" class="border-b-2 border-transparent hover:border-white-custom transition-all duration-300 mr-8">About Us</a>
+                        <a href="#" class="font-semibold border-b-2 border-transparent hover:border-white-custom transition-all duration-300">Login</a>
+                        <a href="#" class="bg-primary-orange px-4 py-2 rounded-lg font-semibold hover:bg-primary-hover transition text-black-custom">Get Started</a>
                     </div>
                 </div>
 
@@ -50,8 +58,8 @@
 
                         <p class="mt-8 font-semibold text-2xl leading-snug">ESG Platform for Tech Companies<br>and Ecosystems</p>
                         <div class="flex flex-row mt-8 gap-4">
-                            <a href="#" class="font-semibold bg-primary-orange rounded-lg px-8 py-4 flex-shrink-0 transition hover:bg-primary-hover">Start for Free</a>
-                            <p class="my-auto">Start your company’s ESG Journey by calculating your carbon footprint for free</p>
+                            <a href="#" class="font-semibold bg-primary-orange rounded-lg px-8 py-4 flex-shrink-0 transition hover:bg-primary-hover text-black-custom">Get Started</a>
+                            <p class="my-auto">Start your company’s ESG Journey by calculating your carbon footprint</p>
                         </div>
                     </div>
                     <!-- right side image -->
@@ -83,22 +91,22 @@
 
         <!-- RIGHT SIDE -->
         <div class="flex flex-col w-1/2 text-light-yellow">
-            <div class="flex flex-row justify-between border-b pb-16 mb-10 gap-8">
-                <div class="w-[180px]">
-                    <h3 class="mb-auto text-2xl font-medium">Client Demand</h3>
+            <div class="flex flex-row justify-between border-b pb-16 mb-1 hover:underline0 gap-8">
+                <div class="">
+                    <h3 class="mb-auto text-2xl font-medium pr-[58px]">Client Demand</h3>
                 </div>
                 <p class="">Clients are demanding sustainability. They want to know that the companies they buy from are committed to protecting the environment and making a positive social impact. Sustainability reporting helps you show customers that you are serious about sustainability and that you are taking action to make a difference.</p>
             </div>
 
-            <div class="flex flex-row justify-between border-b pb-16 mb-10 gap-8">
-                <div class="w-[180px]">
-                    <h3 class="mb-auto text-2xl font-medium">Investor Focus</h3>
+            <div class="flex flex-row justify-between border-b pb-16 mb-1 hover:underline0 gap-8">
+                <div class="">
+                    <h3 class="mb-auto text-2xl font-medium pr-[65px]">Investor Focus</h3>
                 </div>
                 <p>Investors are increasingly focused on ESG. Environmental, social, and governance (ESG) factors are now a major consideration for investors when making investment decisions. Sustainability reporting helps you show investors that you are a well-managed company with a strong commitment to ESG.</p>
             </div>
 
             <div class="flex flex-row justify-between gap-8">
-                <div class="w-[180px]">
+                <div class="">
                     <h3 class="mb-auto text-2xl font-medium">Partner Requirements</h3>
                 </div>
                 <p class="">Businesses are looking for sustainable partners. Leading companies are increasingly looking to partner with other companies that share their commitment to sustainability. Sustainability reporting helps you show potential partners that you are a sustainable company that they can trust.</p>
@@ -108,12 +116,12 @@
     </div>
 
     <!-- FEATURES PART -->
-    <div class="bg-light-yellow py-32 text-black-custom gap-16">
+    <div class="bg-light-yellow pt-32 pb-8 text-black-custom gap-16">
         <div class="wrapper xl:max-w-[1200px] lg:max-w-[900px] mx-auto flex flex-col">
             <p class="text-center text-primary-orange lg:text-5xl text-2xl font-semibold mb-16">Platform Features</p>
 
             <!-- First feature -->
-            <div class="flex flex-row gap-16 justify-between">
+            <div class="flex lg:flex-row flex-col gap-16 justify-between">
                 <img src="images/carbon-accounting-img.png" alt="platform screenshot" class="h-[365px] w-auto">
                 <div class="w-1/2 my-auto">
                     <h3 class="text-2xl mb-6">Carbon Accounting</h3>
@@ -153,6 +161,105 @@
         </div>
 
     </div>
+
+    <!-- BLOCKCHAIN PART -->
+    <div class="relative pt-16 pb-24 wrapper xl:max-w-[1200px] lg:max-w-[900px] mx-auto flex flex-row gap-8">
+        <div class="flex flex-col w-6/12">
+
+            <!-- Orange plus icon -->
+            <img src="images/orange-plus-icon.svg" alt="plus icon" class="absolute left-[200px] -translate-y-[115px] w-[100px] h-[100px]"/>     
+
+            <h2 class="text-left text-primary-orange lg:text-5xl text-2xl font-semibold mb-8 pt-6 leading-relaxed">Blockchain Carbon<br> Footprint Calculator</h2>
+            <p class="text-2xl font-medium mb-6">The crypto sector has often been criticized for its significant carbon footprint, due to the computing power required by decentralized networks, also known as blockchains</p>
+            <p>SUMA Blockchain Carbon Calculator enables crypto industry participants, such as traders, funds, and DeFi platforms, to calculate their carbon footprint based on their crypto holdings, transactions and other on-chain activity. Our accounting method is based on the GHG Protocol and the Crypto Carbon Rating Institute’s methodology.</p>
+            <p class="pb-12 pt-6">Carbon Calculator currently supports Bitcoin, Ethereum, Polygon, and BNB Chain, and is expanding to support all top blockchain networks, cryptocurrencies, tokens, and stablecoins. Soon, the calculator will also provide ESG ratings and MiCA-compliant reporting.</p>
+            <a href="#" class="font-semibold bg-primary-orange rounded-lg px-8 py-4 flex-shrink-0 transition hover:bg-primary-hover mr-auto">Get Started</a>
+        </div>
+        <div class="flex flex-col w-4/12 mx-auto mt-auto">
+            <img class="w-[300px] h-[300px] mx-auto mb-8" src="images/blockchain-icon.svg" alt="blockchain icon">
+            <h3 class="uppercase mt-8 mb-4 text-primary-orange text-sm">SUPPORTED BLOCKCHAINS</h3>
+            <div class="flex flex-row gap-8">
+                <div class="flex flex-col gap-8 justify-between">
+                    <img class="" src="images/bitcoin-logo.png" alt="bitcoin logo">
+                    <img class="" src="images/bnb-logo.png" alt="bnb logo">
+                </div>
+                <div class="flex flex-col gap-4 justify-between">
+                    <img class="" src="images/ethereum-logo.png" alt="ethereum logo">
+                    <img class="" src="images/polygon-logo.png" alt="polygon logo">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Start your ESG Journey today -->
+
+    <div>
+        <div class="flex flex-col mx-auto py-32 xl:max-w-[1200px] lg:max-w-[900px] bg-white-gradient rounded-xl mb-24">
+            <h1 class="text-center text-black-custom lg:text-5xl text-2xl font-semibold mb-8">Start your <span class="text-primary-orange">ESG journey </span> today</h1>
+            <a href="#" class="font-semibold bg-black-custom rounded-lg px-8 py-4 flex-shrink-0 transition hover:bg-black mx-auto">Get SUMA Access Now</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12">
+        <div class="wrapper xl:max-w-[1200px] lg:max-w-[900px] mx-auto flex flex-col">
+            <!-- footer logo in its own div -->
+            <div>
+                <img class="w-[60px] h-[60px]" src="images/suma-logo-square-brown.svg" alt="suma logo">
+            </div>
+            <!-- footer content flex row -->
+            <div class="flex flex-row text-sm justify-between">
+
+                <!-- left side -->
+                <div class="flex flex-col gap-8 w-1/3">
+                    <a href="mailto:support@suma.eco" class="mt-8">support@suma.eco</a>
+                    <p>SUMA is an ESG platform that helps technology companies, funds, and ecosystems reduce their environmental impact, improve their social impact, and strengthen their governance. We provide comprehensive ESG solutions, including carbon accounting, sustainability reporting, and decarbonisation advisory.</p>
+                    <div class="flex flex-col gap-2 text-xs font-light">
+                        <p>Copyright © SUMA SAS. 2023 </p>
+                        <p>SUMA SAS, 930 Route des Dolines, Valbonne, Alpes-Maritimes, France</p>
+                    </div>
+                    <div class="flex flex-row gap-4 text-xs font-light">
+                        <a href="#" class="hover:underline">Privacy Policy</a>
+                        <a href="#" class="hover:underline">Terms and Conditions</a>
+                    </div>
+                </div>
+
+                <!-- middle -->
+                <div class="flex flex-row w-1/3 justify-center gap-16">
+                    <div class="flex flex-col">
+                        <h3 class="font-semibold mb-8">SUMA</h3>
+                        <a href="#" class="mb-1 hover:underline ">Home</a>
+                        <a href="#" class="mb-1 hover:underline">Platform</a>
+                        <a href="#" class="mb-1 hover:underline">Pricing</a>
+                        <a href="#" class="hover:underline">About us</a>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <h3 class="font-semibold mb-8">SOCIALS</h3>
+                        <a href="#" class="mb-1 hover:underline">LinkedIn</a>
+                        <a href="#" class="mb-1 hover:underline">Twitter / X</a>
+                        <a href="#" class="hover:underline">Facebook</a>
+                    </div>
+                </div>
+
+                <!-- Right side / newsletter -->
+                <div class="flex flex-col">
+                    <p class="font-semibold">Stay up to date with the SUMA newsletter</p>
+                    <div class="flex flex-row mt-8 items-center">
+                        <input type="email" placeholder="Enter your email" class="p-2 rounded-lg text-black font-light" style="height: 40px;" required>
+                        <button type="submit" class="ml-2 bg-light-yellow hover:bg-yellow-300 transition rounded-lg px-4 py-2 text-black font-semibold" style="height: 40px;">Sign Up</button>
+                    </div>
+                    <p class="text-xs mt-4">By signing up you accept our Privacy Policy.</p>
+                    <div class="mt-8">
+                        <a href="https://profiles.eco/suma?ref=tm" rel="noopener">
+                            <img class="eco-trustmark" alt=".eco profile for suma.eco" src="https://trust.profiles.eco/suma/eco-button.svg?color=%23F19837" style="max-width:4rem">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     
     <script src="script.js"></script>
 </body>
