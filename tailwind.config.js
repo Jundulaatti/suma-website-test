@@ -17,9 +17,15 @@ module.exports = {
         "primary-hover": "#F1BD37",
         "light-yellow": "#FFF4CF",
         "black-custom": "#181818",
+        "off-yellow": "#F9FFEE",
+        "pale-yellow": "#FFF4CF",
+        "card-2-yellow": "#FFE99F"
+      },
+      boxShadow: {
+        "custom-shadow": "0 4px 22px 0 rgba(0, 0, 0, 0.17)"
       }
-    },
   },
   plugins: [],
+}
 }
 

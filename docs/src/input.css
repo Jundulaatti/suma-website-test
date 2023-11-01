@@ -1,0 +1,47 @@
+.bg-custom {
+    background-image: url('../docs/images/redcharlie-bg-image.png');
+    background-size: cover;  /* Cover the entire element */
+    background-repeat: no-repeat;  /* Do not repeat the image */
+    background-position: center;  /* Center the image */
+}
+
+
+#nav-links-mobile.active {
+    transform: translateX(0);
+}
+
+.custom-bullet::before {
+    content: '•';
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-size: 3rem;
+    color: #F19837;
+    position: relative;
+    top: -0.5em;  /* adjust this based on the exact visual alignment */
+}
+
+.bullet-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.bullet-container p {
+    flex: 1;
+    margin: 0;
+    padding-left: 0.5rem;
+}
+
+.bg-forest {
+    background-image: url('../docs/images/bg-fogforest.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";

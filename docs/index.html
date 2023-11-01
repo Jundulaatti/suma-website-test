@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUMA - Sustainability Management</title>
-    <link href="public/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -21,11 +21,11 @@
 
     <!-- Favicon -->
 
-    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
-    <link rel="manifest" href="../favicon/site.webmanifest">
-    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
@@ -43,13 +43,19 @@
             <div class="pt-4">
                 <div class="nav-menu flex flex-row items-center justify-between text-white-custom">
                     <div class="relative z-50">
-                        <img src="images/suma-logo-square-brown.svg" alt="SUMA Logo" class="w-16 h-16">
+                        <a href="index.html">
+                            <img src="images/suma-logo-square-brown.svg" alt="SUMA Logo" class="w-16 h-16">
+                        </a>
                     </div>
 
                     <!-- Desktop nav links -->
                     <div class="hidden md:flex flex-row gap-4 items-center">
-                        <a href="#" class="border-b-2 border-transparent hover:border-white-custom transition-all duration-300">Pricing</a>
-                        <a href="#" class="border-b-2 border-transparent hover:border-white-custom transition-all duration-300 mr-8">About Us</a>
+                        <a href="pricing.html" class="border-b-2 border-transparent hover:border-white-custom transition-all duration-300">Pricing</a>
+                        <a href="#" class="border-b-2 border-transparent hover:border-white-custom transition-all duration-300 mr-4">About Us</a>
+
+                        <!-- Vertical separator -->
+                        <div class="h-5 bg-white-custom w-px mr-4"></div>
+
                         <a href="#" class="font-semibold border-b-2 border-transparent hover:border-white-custom transition-all duration-300">Sign In</a>
                         <a href="#" class="bg-primary-orange px-4 py-2 rounded-lg font-semibold hover:bg-primary-hover transition text-black-custom">Get Started</a>
                     </div>
@@ -66,7 +72,7 @@
                 <!-- Mobile nav links -->
                 <div id="nav-links-mobile" class="fixed top-0 right-0 h-screen w-full bg-black-custom translate-x-full overflow-y-auto transition-transform duration-300 ease-in-out">
                     <div class="pt-[100px]">
-                        <a href="#" class="mobile-link block p-4">Pricing</a>
+                        <a href="pricing.html" class="mobile-link block p-4">Pricing</a>
                         <a href="#" class="mobile-link block p-4">About Us</a>
                     </div>
                     <div class="call-to-action-links lg:p-4">
@@ -161,12 +167,12 @@
                     <h3 class="text-2xl mb-6">Decarbonisation Assistance</h3>
                     <p>Once you know your carbon footprint, the next step is to working on consistently on short and long term goals towards carbon neutrality. Our unique AI-agent works like a virtual Sustainaiblity Manager advising and assist you on carbon footprint reduction.  </p>
                 </div>
-                <img src="images/carbon-accounting-img.png" alt="platform screenshot" class="w-auto md:w-1/2 lg:w-auto lg:h-[365px] order-2 md:order-none">
+                <img src="images/carbon-footprint.png" alt="platform screenshot" class="w-auto md:w-1/2 lg:w-auto lg:h-[365px] order-2 md:order-none">
             </div>
 
             <!-- Third feature -->
             <div class="flex md:flex-row flex-col gap-16 justify-between">
-                <img src="images/carbon-accounting-img.png" alt="platform screenshot" class="w-auto md:w-1/2 lg:w-auto lg:h-[365px] order-2 md:order-none">
+                <img src="images/carbon-offsetting-img.png" alt="platform screenshot" class="w-auto md:w-1/2 lg:w-auto lg:h-[365px] order-2 md:order-none">
                 <div class="md:w-1/2 my-auto order-1 md:order-none">
                     <h3 class="text-2xl mb-6">Carbon Offsetting</h3>
                     <p>Research shows that company who also do carbon offsetting, reach their sustainability goals faster than those who don’t. On SUMA you can offset your carbon footprint with high-quality, third-party top-rated carbon credits. </p>
@@ -180,7 +186,7 @@
                     <h3 class="text-2xl mb-6">Sustainability & ESG Reporting</h3>
                     <p>EU is a global leader on sustainability regulations and directives. With SUMA Reports tool you can easily create Sustainability and ESG reports and publish them publicly on your website and as a part of your standard financial reporting. Reports are great addion to your marketing as well. </p>
                 </div>
-                <img src="images/carbon-accounting-img.png" alt="platform screenshot" class="w-auto md:w-1/2 lg:w-auto lg:h-[365px] order-2 md:order-none">
+                <img src="images/reporting-img.png" alt="platform screenshot" class="w-auto md:w-1/2 lg:w-auto lg:h-[365px] order-2 md:order-none">
             </div>
 
 
@@ -241,7 +247,7 @@
     <!-- Start your ESG Journey today -->
 
     <div class="px-4 lg:px-0">
-        <div class="flex flex-col mx-auto lg:py-32 py-12 xl:max-w-[1200px] lg:max-w-[900px] bg-white-gradient rounded-xl mb-24">
+        <div class="flex flex-col mx-auto lg:py-32 py-12 xl:max-w-[1200px] lg:max-w-[900px] bg-forest rounded-xl mb-24 shadow-custom-shadow">
             <h1 class="text-center text-black-custom lg:text-5xl text-2xl font-semibold mb-8">Start your <span class="text-primary-orange">ESG journey </span> today</h1>
             <a href="#" class="font-semibold bg-black-custom rounded-lg px-8 py-4 flex-shrink-0 transition hover:bg-black mx-auto">Get SUMA Access Now</a>
         </div>
@@ -275,17 +281,17 @@
                 <div class="flex lg:flex-row flex-col lg:w-1/3 justify-center gap-16">
                     <div class="flex flex-col">
                         <h3 class="font-semibold mb-8 text-primary-orange">SUMA</h3>
-                        <a href="#" class="mb-1 hover:underline ">Home</a>
+                        <a href="index.html" class="mb-1 hover:underline ">Home</a>
                         <a href="#" class="mb-1 hover:underline">Platform</a>
-                        <a href="#" class="mb-1 hover:underline">Pricing</a>
+                        <a href="pricing.html" class="mb-1 hover:underline">Pricing</a>
                         <a href="#" class="hover:underline">About us</a>
                     </div>
 
                     <div class="flex flex-col">
                         <h3 class="font-semibold mb-8 text-primary-orange">SOCIALS</h3>
-                        <a href="#" class="mb-1 hover:underline">LinkedIn</a>
-                        <a href="#" class="mb-1 hover:underline">Twitter / X</a>
-                        <a href="#" class="hover:underline">Facebook</a>
+                        <a href="https://www.linkedin.com/company/suma-ai/" class="mb-1 hover:underline" target="_blank">LinkedIn</a>
+                        <a href="https://twitter.com/sumainsider" class="mb-1 hover:underline" target="_blank">Twitter / X</a>
+                        <a href="https://www.facebook.com/SUMAplatform/" class="hover:underline" target="_blank">Facebook</a>
                     </div>
                 </div>
 
