@@ -1,5 +1,5 @@
 .bg-custom {
-    background-image: url('../docs/images/redcharlie-bg-image.png');
+    background-image: url('/images/redcharlie-bg-image.png');
     background-size: cover;  /* Cover the entire element */
     background-repeat: no-repeat;  /* Do not repeat the image */
     background-position: center;  /* Center the image */
@@ -33,7 +33,7 @@
 }
 
 .bg-forest {
-    background-image: url('../docs/images/bg-fogforest.jpg');
+    background-image: url('/images/bg-fogforest.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
