@@ -1,5 +1,5 @@
 .bg-custom {
-  background-image: url('/images/redcharlie-bg-image.png');
+  background-image: url('images/redcharlie-bg-image.png');
   background-size: cover;
   /* Cover the entire element */
   background-repeat: no-repeat;
@@ -36,7 +36,7 @@
 }
 
 .bg-forest {
-  background-image: url('/images/bg-fogforest.jpg');
+  background-image: url('images/bg-fogforest.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
