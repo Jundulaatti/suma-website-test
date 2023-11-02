@@ -1,5 +1,5 @@
 .bg-custom {
-  background-image: url('../docs/images/redcharlie-bg-image.png');
+  background-image: url('images/redcharlie-bg-image.png');
   background-size: cover;
   /* Cover the entire element */
   background-repeat: no-repeat;
@@ -36,7 +36,7 @@
 }
 
 .bg-forest {
-  background-image: url('../docs/images/bg-fogforest.jpg');
+  background-image: url('images/bg-fogforest.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -587,6 +587,10 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .left-1\/2 {
   left: 50%;
 }
@@ -928,6 +932,10 @@ video {
   background-color: rgb(230 255 242 / var(--tw-bg-opacity));
 }
 
+.bg-opacity-90 {
+  --tw-bg-opacity: 0.9;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -1121,6 +1129,17 @@ video {
 
 .outline {
   outline-style: solid;
+}
+
+.backdrop-blur-lg {
+  --tw-backdrop-blur: blur(16px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.backdrop-filter {
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .transition {
@@ -1368,6 +1387,10 @@ video {
     flex-direction: row;
   }
 
+  .lg\:gap-16 {
+    gap: 4rem;
+  }
+
   .lg\:gap-8 {
     gap: 2rem;
   }
@@ -1403,6 +1426,10 @@ video {
     padding-top: 0px;
   }
 
+  .lg\:pt-6 {
+    padding-top: 1.5rem;
+  }
+
   .lg\:pt-8 {
     padding-top: 2rem;
   }
@@ -1414,6 +1441,11 @@ video {
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .lg\:text-xl {
