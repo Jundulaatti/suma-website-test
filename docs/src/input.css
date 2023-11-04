@@ -1,8 +1,15 @@
 .bg-custom {
     background-image: url('../images/redcharlie-bg-image.png');
-    background-size: cover;  /* Cover the entire element */
-    background-repeat: no-repeat;  /* Do not repeat the image */
-    background-position: center;  /* Center the image */
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.bg-custom-mountains {
+    background-image: url("../images/mountains-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 

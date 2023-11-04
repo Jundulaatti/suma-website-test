@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./docs/*.html"
+    "./docs/**/*.html"
   ],
   theme: {
     extend: {
@@ -19,7 +19,8 @@ module.exports = {
         "black-custom": "#181818",
         "off-yellow": "#F9FFEE",
         "pale-yellow": "#FFF4CF",
-        "card-2-yellow": "#FFE99F"
+        "card-2-yellow": "#FFE99F",
+        "dark-gray": "#2D3136"
       },
       boxShadow: {
         "custom-shadow": "0 4px 22px 0 rgba(0, 0, 0, 0.17)"
