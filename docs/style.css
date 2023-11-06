@@ -40,7 +40,7 @@
 }
 
 .bg-forest {
-  background-image: url('../images/bg-fogforest.jpg');
+  background-image: url('images/bg-fogforest.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
